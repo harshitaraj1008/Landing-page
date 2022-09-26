@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <title> Landing Page</title>
+    <script src="https://kit.fontawesome.com/1145920bd5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Deepotsav
+            <img src="photo/pic 2.jpg">
+        </div>
+
+        <!-- toggle menu button -->
+        <span class="menubtn" onclick="openNav()">&#9776;</span>
+
+
+        <div class="navLinks">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+                <button type="button">Login</button>
+            </ul>
+        </div>
+    </nav>
+    <!-- responsive side navbar -->
+    <div class="sideNav" id="sidenav">
+        <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#"></a>
+        <a href="#"><button type="button">Login</button> </a>
+    </div>
+
+    <!-- Header content with banner image -->
+    <div class="row">
+        <div class="column1">
+            <h1>Ayodhya Divya Deepotsav</h1>
+            <p>LET'S CELEBRATE DIWALI IN AYODHYA</p>
+            <h2>About Deepotsav</h2>
+            <br>
+            <i>For the last four years, Ayodhya has been celebrating the grand Deepotsav ahead of the much-awaited festival of lights - Diwali. This celebration is held to spread awareness about the rich culture and heritage of Ayodhya.
+                This year, the Ayodhya administration is observing and celebrating the fifth edition of Deepotsav. It will be organised by the Uttar Pradesh government on a grand scale starting from, 19 October, and it will continue till 23 October.</i>
+            <br>
+            <br>
+
+            <button>KNOW MORE</button>
+            <br>
+            <br>
+            <div class="column2">
+                <img src="photo/pic 4.jpg" alt="banner" width="500px">
+                <p>Deepotsav is conducted during Chhoti Diwali, when the whole city is lit up with earthen lamps (diyas) to mark the occasion. Currently, the temple town of Ayodhya has already been decked up and beautifully lit for the grand Deepotsav 2021
+                    celebrations. The main Deepotsav celebration will begin today with online competitions. According to a News18 report, this year around nine lakh earthen lamps (diyas) will be lit in Ayodhya to create a new world record. Also, a team
+                    from the Guinness Book of World Records will be present to judge the event.</p>
+                <p>Ayodhya: Uttar Pradesh Chief Minister Yogi Adityanath led-government on Wednesday lit 12 lakh diyas on the occasion of 'Deepotsav 2021' and entered the Guinness Book of World Records once again. On the occasion of Deepotsav, out of 12
+                    lakh diyas, 9,51,000 earthen lamps were lit on the bank of the Saryu river in Ayodhya while 50,000 diyas were lit at the site of the Ram temple and the rest were lit in other temples across the state. The Uttar Pradesh government left
+                    no stone unturned in making Diwali a grand event and many spectacular events like Ramlila staging, laser show, 3D holographic show and fireworks are being held since Monday.
+
+                </p>
+            </div>
+        </div>
+        <div class="images">
+            <img src="photo/pic 5.jpg">
+            <img src="photo/pic6.jpg">
+            <img src="photo/piv 7.jpg">
+            <img src="photo/pic 8.jpg">
+        </div>
+
+
+        <div>
+            <ul class="sci">
+                <li><i class=" fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fab fa-instagram"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="galley">
+        <marquee behavior="alternate">
+            <img src="photo/pic 10.jpeg">
+            <img src="photo/pic 11.jpeg">
+            <img src="photo/pic 13.jpeg">
+            <img src="photo/pic 14.jpeg">
+            <img src="photo/pic 9.jpg">
+        </marquee>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="cc">
+                <img src="photo/pic111.jpg" height="150px" width="180px">
+                <br>
+                <br>
+                <h3>Must visit Ayodhya !</h3>
+                <h2>Deepotsav 2022 is coming....<br> Get ready to celebrate the grand fesatival..</h2>
+
+                <i class=" fab fa-facebook square" size="5px"></i>
+                <i class=" fab fa-linkedin"></i>
+                <i class="fab fab fa-youtube-square"></i>
+                <i class="fa fa-twitter"></i>
+
+            </div>
+
+            <a href="#">&copy; 2022 DEEPOTSAV | DESIGNED BY HARSHITA</a>
+        </div>
+    </footer>
+    <!-- javascript to make side menu appear -->
+    <script>
+        function openNav() {
+            document.getElementById("sidenav").style.width = "50%";
+        }
+
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0%";
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/1145920bd5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

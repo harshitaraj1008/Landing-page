@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, rgba(29, 12, 12, 0.8), rgba(148, 171, 235, 0.8)), url("photo/pic\ 2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 5%;
+}
+
+nav .logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.logo img {
+    margin-left: 4%;
+    border-radius: 50%;
+    border: 1px double coral;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav .navLinks button {
+    padding: 2px 20px;
+    border-radius: 10px;
+    color: blue;
+    font-size: 16px;
+    border-style: none;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+nav ul li:hover {
+    background-color: rgb(44, 1, 197);
+}
+
+nav .menubtn {
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+}
+
+.column1 {
+    margin-top: 15%;
+}
+
+.column1 i {
+    font-size: medium;
+}
+
+.column2 img {
+    float: left;
+    border-radius: 50%;
+}
+
+.column2 p {
+    font-style: italic;
+    padding: 5px 15px;
+    color: mistyrose;
+}
+
+.images img {
+    height: 250px;
+    width: 250px;
+}
+
+.galley img {
+    height: 250px;
+    width: 250px;
+}
+
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li i {
+    display: inline-block;
+    margin: 15px 10px;
+    transform: scale(1.6);
+    cursor: pointer;
+    color: black;
+}
+
+footer {
+    overflow: hidden;
+}
+
+.cc {
+    text-align: center;
+    margin: 10px;
+    color: black;
+}
+
+.cc i {
+    cursor: pointer;
+    size: 10px;
+}
+
+.foot a {
+    background-color: rgb(3, 133, 184);
+    text-decoration: none;
+    width: 100%;
+    padding: 20px;
+    padding-left: -50px;
+    text-align: center;
+    float: left;
+    color: white;
+    margin-top: 5px;
+}
+
+
+/* responsive navbar css */
+
+@media screen and (max-width: 600px) {
+    nav .menubtn {
+        display: flex;
+    }
+    nav .navLinks {
+        display: none;
+    }
+    .sideNav {
+        display: block !important;
+    }
+}
+
+.sideNav {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    background-color: rgb(44, 1, 197);
+    overflow-x: hidden;
+    transition: 0.3s ease-in;
+    padding-top: 60px;
+    display: none;
+}
+
+.sideNav a {
+    padding: 8px 8px 8px 40px;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    color: #d1d1d1;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.sideNav a button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: blue;
+    font-size: 16px;
+    border-style: none;
+    font-weight: 700;
+}
+
+.sideNav a:hover {
+    color: white;
+}
+
+.sideNav .closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5%;
+}
+
+.row .column1 {
+    padding-right: 50px;
+}
+
+.column1 h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.column1 p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.column1 button {
+    width: 150px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border-style: none;
+    color: blue;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+/* Header content responsive */
+
+@media screen and (max-width: 980px) {
+    .column2 img {
+        width: 350px;
+    }
+    .column1 h1 {
+        font-size: 40px;
+    }
+    .column1 p {
+        font-size: 17px;
+    }
+    .row {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column1 h1 {
+        font-size: 35px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .column1 {
+        padding: 30px;
+    }
+}
